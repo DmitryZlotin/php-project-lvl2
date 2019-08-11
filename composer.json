@@ -5,6 +5,14 @@
     "scripts": {
       "phpcs": "phpcs"
     },
+    "bin": [
+        "bin/gendiff"
+    ],
+    "autoload": {
+      "files": [
+        "src/Gendiff.php"
+      ]
+    },
     "require": {
         "wp-cli/php-cli-tools": "v0.11.11",
         "docopt/docopt": "^1.0"
