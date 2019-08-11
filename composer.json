@@ -2,6 +2,9 @@
     "name": "dmitryzlotin/php-project-lvl2",
     "description": "PHP learn project 2",
     "type": "project",
+    "scripts": {
+      "phpcs": "phpcs"
+    },
     "require": {
         "wp-cli/php-cli-tools": "v0.11.11",
         "docopt/docopt": "^1.0"
