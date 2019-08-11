@@ -1,0 +1,19 @@
+{
+    "name": "dmitryzlotin/php-project-lvl2",
+    "description": "PHP learn project 2",
+    "type": "project",
+    "require": {
+        "wp-cli/php-cli-tools": "v0.11.11",
+        "docopt/docopt": "^1.0"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.4"
+    },
+    "license": "MTI",
+    "authors": [
+        {
+            "name": "Dmitry Zlotin",
+            "email": "dmitryzlotin@gmail.com"
+        }
+    ]
+}
