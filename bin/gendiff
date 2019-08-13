@@ -9,6 +9,6 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-use function Gendiff\Start;
+use function Differ\Start;
 
 Start();
