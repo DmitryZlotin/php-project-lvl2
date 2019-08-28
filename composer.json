@@ -4,7 +4,7 @@
     "type": "project",
     "scripts": {
       "phpcs": "phpcs",
-      "phpunit": "phpunit",
+      "phpunit": "./vendor/bin/phpunit",
       "test": "phpunit tests"
     },
     "bin": [
