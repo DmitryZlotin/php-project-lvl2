@@ -5,7 +5,7 @@
     "scripts": {
       "phpcs": "phpcs",
       "phpunit": "./vendor/bin/phpunit",
-      "test": "phpunit tests"
+      "test": "phpunit ./tests"
     },
     "bin": [
         "bin/gendiff"
