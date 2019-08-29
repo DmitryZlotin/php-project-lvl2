@@ -1,3 +1,7 @@
+env:
+  global:
+    CC_TEST_REPORTER_ID=baa4cbecab10bce8bd967fcaaf9089431aa53e47d4e1f2230212614e13571cf4
+
 language: php
 php:
   - '7.2'
@@ -6,16 +10,14 @@ install:
     - composer self-update
     - make install
 
-env:
-  global:
-    CC_TEST_REPORTER_ID=baa4cbecab10bce8bd967fcaaf9089431aa53e47d4e1f2230212614e13571cf4
-
 before_script:
     - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
     - chmod 777 ./cc-test-reporter
     - ./cc-test-reporter before-build
 
-script: make lint test
+script:
+    - make lint
+    - make test
 
 after_script:
     - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
